@@ -1,0 +1,10 @@
+.other-help__social-icon_name_subtract {
+    background-image: url("../../../../../../images/subtract-fiolet.svg");
+    cursor: pointer;
+}
+.other-help__social-icon_name_subtract:hover {
+    background-image: url("../../../../../../images/subtract-orange.svg");
+}
+.other-help__social-icon_name_subtract:active {
+    background-image: url("../../../../../../images/subtract-orange.svg");
+}

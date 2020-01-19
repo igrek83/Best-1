@@ -1,0 +1,16 @@
+@import url("./__border/help__border.css");
+.help__choice-input-style {
+    color: #9397CB; 
+    font-size: 18px;
+    line-height: 24px;
+    flex-direction: column;
+    font-family: "HelveticaNeueCyr-Bold";
+    display: flex;
+    cursor: pointer;
+}
+.help__choice-input:checked + .help__choice-input-style>.help__border {
+    background: #5A3F98;
+}
+.help__choice-input:checked + .help__choice-input-style {
+    color: #5A3F98;
+}

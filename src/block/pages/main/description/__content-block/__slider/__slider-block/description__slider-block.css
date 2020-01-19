@@ -1,0 +1,6 @@
+@import url("./__slider-image-container/description__slider-image-container.css");
+@import url("./__slider-control/description__slider-control.css");
+.description__slider-block {
+    display: flex;
+    flex-direction: column;
+}

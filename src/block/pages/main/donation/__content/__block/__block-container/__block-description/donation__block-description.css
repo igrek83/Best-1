@@ -1,0 +1,14 @@
+@import url("./__block-column/donation__block-column.css");
+.donation__block-description {
+    width: 452px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.9px dashed #9397CB;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+}
+@media all and (max-width: 768px) {
+    .donation__block-description {
+        width: 288px;
+    }
+}

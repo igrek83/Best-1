@@ -1,0 +1,58 @@
+.popup__random-summa-input {
+    position: absolute;
+    max-width: 158px;
+    height: 24px;
+    left: 500px;
+    top: 8px;
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 18px;
+    line-height: 24px;
+    color: #333235;
+    display: flex;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9397CB;
+}
+@media all and (max-width: 740px) {
+    .popup__random-summa-input {
+        left: 130px;
+        top: 70px;
+    }
+}
+@media all and (max-width: 340px) {
+    .popup__random-summa-input {
+        left: 123px;
+        top: 70px;
+    }
+}
+[name="popupRandomSumma"]::-webkit-input-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 14px;
+    line-height: 16px;
+    color: #969696;
+    letter-spacing: 0.5px;
+};    
+[name="popupRandomSumma"]::-moz-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 14px;
+    line-height: 16px;
+    color: #969696;
+    letter-spacing: 0.5px;
+}
+[name="popupRandomSumma"]:-moz-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 14px;
+    line-height: 16px;
+    color: #969696;
+    letter-spacing: 0.5px;
+}
+[name="popupRandomSumma"]:-ms-input-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 14px;
+    line-height: 16px;
+    color: #969696;
+    letter-spacing: 0.5px;
+}
+.popup__random-summa-input:focus {
+    border-bottom: 2px solid white;
+}

@@ -1,0 +1,10 @@
+@import url("./__social-icon/gratitude__social-icon.css");
+@import url("./__social-icon/gratitude__social-icon_name_vk.css");
+@import url("./__social-icon/gratitude__social-icon_name_fb.css");
+@import url("./__social-icon/gratitude__social-icon_name_twitter.css");
+.gratitude__social {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

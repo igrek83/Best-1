@@ -1,0 +1,17 @@
+.donation__block-title {
+    text-align: center;
+    font-family: "HelveticaNeueCyr-Bold";
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #5a3f98;
+    margin-bottom: 29px;
+}
+@media all and (max-width: 360px) {
+    .donation__block-title {
+        width: 300px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+        
+}

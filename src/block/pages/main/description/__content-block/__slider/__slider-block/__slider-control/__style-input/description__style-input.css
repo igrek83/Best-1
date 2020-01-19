@@ -1,0 +1,14 @@
+@import url("./__input/description__input.css");
+.description__style-input {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid #9397CB 2px;
+  cursor: pointer;
+}
+@media all and (max-width: 360px) {
+  .description__slider-input {
+      width: 4px;
+      height: 4px;
+  }
+}

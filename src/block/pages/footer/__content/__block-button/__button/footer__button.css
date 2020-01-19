@@ -1,0 +1,39 @@
+.footer__button {
+    border: none;
+    outline: none;
+    width: 162px;
+    height: 42px;
+    font-family: "HelveticaNeueCyr-Bold";
+    cursor: pointer;
+    border: 2px solid #FC691B;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background: #FC691B;
+    font-size: 14px;
+    line-height: 38px;
+    letter-spacing: 0.5px;
+    margin-bottom: 103px;
+}
+.footer__button:hover {
+    color: #FFFFFF;
+    background: #FC691B;
+}
+.footer__button:active {
+    color: #333235;
+    background: #FC691B;
+}
+@media all and (max-width: 1150px) {
+    .footer__button {
+        margin-bottom: 235px;
+    }
+}
+@media all and (max-width: 620px) {
+    .footer__button {
+        margin-bottom: 52px;
+    }
+}
+@media all and (max-width: 768px) {
+    .footer__button {
+        width: 142px;
+    }
+}

@@ -1,0 +1,24 @@
+.gratitude__image {
+    width: 540px;
+    height: 280px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+@media all and (max-width: 810px) {
+    .gratitude__image {
+        width: 480px;
+        height: 240px;
+    }
+}
+@media all and (max-width: 570px) {
+    .gratitude__image {
+        width: 350px;
+        height: 200px;
+    }
+}
+@media all and (max-width: 370px) {
+    .gratitude__image {
+        width: 310px;
+        height: 180px;
+    }
+}

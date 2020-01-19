@@ -1,0 +1,19 @@
+@import url("__description/other-help__description.css");
+@import url("__email/other-help__email.css");
+@import url("__block/other-help__block.css");
+@import url("__social-block/other-help__social-block.css");
+@import url("./__text/other-help__text.css");
+.other-help {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 119px;
+    padding-bottom: 121px;
+    align-items: center;
+}
+@media all and (max-width: 310px) {
+    .other-help {
+        width: 310px;
+    }
+}

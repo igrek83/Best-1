@@ -1,0 +1,6 @@
+@media all and (max-width: 600px)  {
+    .other-help__text {
+        max-width: 328px;
+        text-align: center;
+    }
+}

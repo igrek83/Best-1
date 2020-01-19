@@ -1,0 +1,11 @@
+@import url("./__social-icon/other-help__social-icon_name_vk.css");
+@import url("./__social-icon/other-help__social-icon_name_fb.css");
+@import url("./__social-icon/other-help__social-icon_name_subtract.css");
+@import url("./__social-icon/other-help__social-icon_name_twitter.css");
+@import url("./__social-icon/other-help__social-icon.css");
+.other-help__social-block {
+    width: 224px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+}

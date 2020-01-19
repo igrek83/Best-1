@@ -1,0 +1,6 @@
+@import url("./__checkbox/popup__checkbox.css");
+@import url("./__checkbox-style/popup__checkbox-style.css");
+@import url("./__checkbox-description/popup__checkbox-description.css");
+.popup__checkbox-block {
+    display: flex;
+}

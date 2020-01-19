@@ -1,0 +1,8 @@
+.popup__about-error {
+    visibility: hidden;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    font-family: "HelveticaNeueCyr-Roman";
+    color: #ED180B; 
+}

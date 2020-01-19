@@ -1,0 +1,27 @@
+.popup__summa-input-style {
+    width: 106px;
+    height: 46px;
+    cursor: pointer;
+    border: 2px solid #FC691B;
+    color: #FC691B;
+    font-family: "HelveticaNeueCyr-Bold";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media all and (max-width: 740px) {
+    .popup__summa-input-style {
+        width: 96px;   
+}
+}
+.popup__summa-input-style:hover {
+    background: #FC691B;
+    color: #FFFFFF;
+}
+.popup__summa-input:checked + .popup__summa-input-style {
+    background: #FC691B;
+    color: #FFFFFF;
+}

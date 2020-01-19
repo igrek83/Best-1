@@ -1,0 +1,12 @@
+@import url("./__image/footer__image.css");
+@import url("./__large-block/footer__large-block.css");
+@import url("./__block-button/footer__block-button.css");
+.footer__content {
+    display: flex;
+}
+@media all and (max-width: 620px) {
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

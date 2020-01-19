@@ -1,0 +1,33 @@
+.other-help__email {
+    text-decoration: none;
+    text-align: center;
+    font-family: "HelveticaNeueCyr-Bold";
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #5a3f98;
+    padding-top: 7px;
+    padding-bottom: 50px;
+}
+@media all and (max-width: 768px) {
+    .other-help__email {
+        padding-bottom: 40px;
+        text-decoration: underline;
+    }
+}
+@media all and (max-width: 450px) {
+    .other-help__email {
+        width: 328px;
+        padding-bottom: 45px;
+        text-decoration: none;
+        letter-spacing: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+@media all and (max-width: 340px) {
+    .other-help__email {
+        width: 300px;
+    }
+}

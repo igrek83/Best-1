@@ -1,0 +1,6 @@
+.footer__social-icon_name_instagram {
+    background-image: url("../../../../../../../../images/instagram-black.svg");
+}
+.footer__social-icon_name_instagram:hover {
+    background-image: url("../../../../../../../../images/instagram-fiolet.svg");
+}

@@ -1,0 +1,29 @@
+@import url("./__social-icon/footer__social-icon_name_vk.css");
+@import url("./__social-icon/footer__social-icon_name_fb.css");
+@import url("./__social-icon/footer__social-icon_name_youtube.css");
+@import url("./__social-icon/footer__social-icon_name_instagram.css");
+@import url("./__social-icon/footer__social-icon.css");
+.footer__social-block {
+    margin-top: 26px;
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
+}
+@media all and (max-width: 1150px) {
+    .footer__social-block {
+        position: absolute;
+        top: 210px;
+    }
+}
+@media all and (max-width: 768px) {
+    .footer__social-block {
+        position: absolute;
+        top: 205px;
+    }
+}
+@media all and (max-width: 620px) {
+    .footer__social-block {
+        position: absolute;
+        left: 19%;
+    }
+}

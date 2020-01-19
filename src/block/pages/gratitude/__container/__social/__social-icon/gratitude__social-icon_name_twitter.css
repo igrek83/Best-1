@@ -1,0 +1,9 @@
+.gratitude__social-icon_name_twitter {
+    background-image: url("../../../../../../images/twitter-fiolet.svg");
+}
+.gratitude__social-icon_name_twitter:hover {
+    background-image: url("../../../../../../images/twitter-orange.svg");
+}
+.gratitude__social-icon_name_twitter:active {
+    background-image: url("../../../../../../images/twitter-orange.svg");
+}

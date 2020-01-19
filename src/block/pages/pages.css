@@ -1,0 +1,32 @@
+@import url("./header/header.css");
+@import url("./header/header_is_opened.css");
+@import url("./main/main.css");
+@import url("./popup/popup.css");
+@import url("./gratitude/gratitude.css");
+@import url("./gratitude/gratitude_is_opened.css");
+@import url("./popup/popup_is_opened.css");
+@import url("./footer/footer.css");
+@import url("./text-phrase/text-phrase.css");
+@import url("./text-bold/text-bold.css");
+@import url("./color-error/color-error.css");
+@import url("./disabled/disabled.css");
+.pages {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+}
+@media all and (max-width: 310px) {
+    .pages {
+        width: 310px;
+    }
+}

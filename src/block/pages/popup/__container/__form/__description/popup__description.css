@@ -1,0 +1,20 @@
+.popup__description {
+    font-family: "HelveticaNeueCyr-Roman";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #5A3F98;
+    margin-bottom: 60px;
+}
+@media all and (max-width: 740px) {
+    .popup__description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 340px) {
+    .popup__description {
+        width: 310px;
+    }
+}

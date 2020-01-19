@@ -1,0 +1,29 @@
+@import url("./__arrow/description__arrow.css");
+@import url("./__arrow/description__arrow_theme_left.css");
+@import url("./__arrow/description__arrow_theme_right.css");
+@import url("./__style-input/description__style-input.css");
+.description__slider-control {
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 120px;
+    left: 480px;
+    order: 1;
+    margin-top: 22px;
+    align-self: flex-end;
+}
+@media all and (max-width: 1345px) {
+    .description__slider-control {
+        align-self: center;
+    }
+}
+@media all and (max-width: 768px) {
+    .description__slider-control {
+        width: 140px;
+    }
+}
+@media all and (max-width: 360px) {
+    .description__slider-control {
+        width: 140px;
+    }
+}

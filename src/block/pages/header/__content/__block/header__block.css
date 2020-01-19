@@ -1,0 +1,17 @@
+@import url("./__title/header__title.css");
+@import url("./__description/header__description.css");
+.header__block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+@media all and (max-width: 768px) {
+  .header__block {
+    padding-top: 10px;
+  }
+}
+@media all and (max-width: 460px) {
+    .header__block {
+      display: none;
+    }
+}

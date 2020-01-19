@@ -1,0 +1,19 @@
+.description__slider-help {
+    color: #FC691B;
+    font-family: "HelveticaNeueCyr-Bold";
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+@media all and (max-width: 768px) {
+    .description__slider-help {
+        width: 500px;
+    }
+}
+@media all and (max-width: 525px) {
+    .description__slider-help {
+        width: 312px;
+        font-size: 18px;
+        line-height: 24px;
+    }   
+}

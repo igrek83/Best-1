@@ -1,0 +1,23 @@
+.help__symbol-rubl {
+    position: absolute;
+    left: 675px;
+    top: 10px;
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-weight: bold;
+    font-size: 21px;
+    color: #9397CB;
+}
+@media all and (max-width: 740px) {
+    .help__symbol-rubl {
+        left: 295px;
+        top: 72px;
+    }
+}
+@media all and (max-width: 740px) {
+    .help__symbol-rubl {
+        left: 288px;
+    }
+}
+.help__random-summa-input:focus + .help__symbol-rubl {
+    color: #fc691b;
+}

@@ -1,0 +1,26 @@
+.other-help__description {
+    width: 812px;
+    text-align: center;
+}
+@media all and (max-width: 900px) {
+    .other-help__description {
+        width: 608px;
+    }
+}
+@media all and (max-width: 610px) {
+    .other-help__description {
+        width: 400px;
+    }
+}
+@media all and (max-width: 450px) {
+    .other-help__description {
+        width: 328px;
+        text-align: left;
+    }
+}
+@media all and (max-width: 340px) {
+    .other-help__description {
+        width: 300px;
+        text-align: left;
+    }
+}

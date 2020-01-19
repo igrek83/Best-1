@@ -1,0 +1,20 @@
+@import url("./__block-border/help__block-border.css");
+@import url("./__block-summa/help__block-summa.css");
+.help__block {
+    width: 706px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 41px;
+}
+@media all and (max-width: 740px) {
+    .help__block {
+        width: 328px;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 340px) {
+    .help__block {
+        width: 310px;
+        margin-bottom: 30px;
+    }
+}

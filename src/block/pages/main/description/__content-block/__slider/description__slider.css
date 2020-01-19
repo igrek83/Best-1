@@ -1,0 +1,16 @@
+@import url("./__slider-block/description__slider-block.css");
+@import url("./__slider-container/description__slider-container.css");
+.description__slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    margin-bottom: 85px;
+}
+@media all and (max-width: 1345px) {
+    .description__slider {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}

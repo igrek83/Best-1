@@ -1,0 +1,8 @@
+.popup__choice-input-style_theme_right {
+    width: 141px;
+}
+@media all and (max-width: 320px) {
+    .popup__choice-input-style_theme_right {
+        width: 136px;       
+    }
+}

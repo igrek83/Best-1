@@ -1,0 +1,12 @@
+.help__button_theme_monthly {
+    background: #9397CB;
+    color: #FFFFFF;
+}
+.help__button_theme_monthly:focus {
+    background: #5A3F98;
+}
+@media all and (max-width: 740px) {
+    .help__button_theme_monthly {
+        margin-bottom: 24px;
+    }
+}

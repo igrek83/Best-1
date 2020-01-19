@@ -1,0 +1,30 @@
+@import url("./__social-icon/header__social-icon_name_vk.css");
+@import url("./__social-icon/header__social-icon_name_fb.css");
+@import url("./__social-icon/header__social-icon_name_subtract.css");
+@import url("./__social-icon/header__social-icon_name_twitter.css");
+@import url("./__social-icon/header__social-icon.css");
+.header__social-block {
+    width: 224px;
+    display: none;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    margin-right: 50px;
+}
+@media all and (max-width: 940px) {
+    .header__social-block {
+    margin-right: 10px;
+    }
+}
+@media all and (max-width: 768px) {
+    .header__social-block {
+        width: 180px;
+        margin-left: 20px;
+        margin-right: 24px;
+    }
+}
+@media all and (max-width: 700px) {
+    .header__social-block {
+        display: none;
+    }
+}

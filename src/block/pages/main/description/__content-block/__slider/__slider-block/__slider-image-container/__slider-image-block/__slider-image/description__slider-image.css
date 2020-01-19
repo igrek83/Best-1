@@ -1,0 +1,35 @@
+.description__slider-image {
+    width: 720px;
+    height: 448px;
+    background-size: cover;
+}
+@media all and (max-width: 768px) {
+    .description__slider-image {
+       width: 704px;
+       height: 440px;
+    }
+}
+@media all and (max-width: 720px) {
+    .description__slider-image {
+       width: 500px;
+       height: 340px;
+    }
+}
+@media all and (max-width: 520px) {
+    .description__slider-image {
+       width: 360px;
+       height: 244px;
+    }
+}
+@media all and (max-width: 360px) {
+    .description__slider-image {
+       width: 320px;
+       height: 195px;
+    }
+}
+@media all and (max-width: 320px) {
+    .description__slider-image {
+       width: 310px;
+       height: 190px;
+    }
+}

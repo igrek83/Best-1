@@ -1,0 +1,12 @@
+.text-phrase {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #333235;
+}
+@media all and (max-width: 360px) {
+    .text-phrase {
+        font-size: 16px;
+    }
+}

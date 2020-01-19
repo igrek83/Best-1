@@ -1,0 +1,8 @@
+@import url("./__description/donation__description.css");
+@import url("./__summa/donation__summa.css");
+@import url("./__block/donation__block.css");
+.donation__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,26 @@
+@import url("./__summa-input/help__summa-input.css");
+@import url("./__summa-input-style/help__summa-input-style.css");
+@import url("./__summa-input-style/help__summa-input-style_theme_right.css");
+@import url("./__random-summa-block/help__random-summa-block.css");
+@import url("./__symbol-rubl/help__symbol-rubl.css");
+@import url("./__random-summa-input/help__random-summa-input.css");
+.help__form-summa {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+@media all and (max-width: 740px) {
+    .help__form-summa {
+        width: 328px;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+}
+@media all and (max-width: 340px) {
+    .help__form-summa {
+        width: 310px;
+    }
+}

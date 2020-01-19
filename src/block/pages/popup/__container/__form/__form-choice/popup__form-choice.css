@@ -1,0 +1,14 @@
+@import url("./__choice-input/popup__choice-input.css");
+@import url("./__choice-input-style/popup__choice-input-style.css");
+@import url("./__choice-input-style/popup__choice-input-style_theme_left.css");
+@import url("./__choice-input-style/popup__choice-input-style_theme_right.css");
+@import url("./__choice-block/popup__choice-block.css");
+.popup__form-choice {
+    display: flex;
+    margin-bottom: 40px;
+}
+@media all and (max-width: 740px) {
+    .popup__form-choice {
+        margin-bottom: 30px;
+    }
+}

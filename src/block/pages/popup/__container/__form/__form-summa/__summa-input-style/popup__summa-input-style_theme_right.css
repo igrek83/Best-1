@@ -1,0 +1,12 @@
+@media all and (max-width: 740px) {
+    .popup__summa-input-style_theme_right {
+        margin-right: 19px;
+        margin-bottom: 15px;
+    } 
+}
+@media all and (max-width: 340px) {
+    .popup__summa-input-style_theme_right {
+        margin-right: 11px;
+        margin-bottom: 15px;
+    }
+}

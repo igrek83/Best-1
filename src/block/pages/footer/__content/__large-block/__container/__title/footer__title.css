@@ -1,0 +1,16 @@
+.footer__title {
+    width: 216px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #333235;
+    font-family: "HelveticaNeueCyr-Light";
+    padding-bottom: 4px;
+}
+@media all and (max-width: 620px) {
+    .footer__title {
+        text-align: center;
+    }
+}

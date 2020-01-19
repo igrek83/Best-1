@@ -1,0 +1,16 @@
+@import url("./__border/popup__border.css");
+.popup__choice-input-style {
+    color: #9397CB; 
+    font-size: 18px;
+    line-height: 24px;
+    flex-direction: column;
+    font-family: "HelveticaNeueCyr-Bold";
+    display: flex;
+    cursor: pointer;
+}
+.popup__choice-input:checked + .popup__choice-input-style>.popup__border {
+    background: #5A3F98;
+}
+.popup__choice-input:checked + .popup__choice-input-style {
+    color: #5A3F98;
+}

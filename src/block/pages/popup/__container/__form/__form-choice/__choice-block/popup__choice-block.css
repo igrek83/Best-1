@@ -1,0 +1,16 @@
+.popup__choice-block {
+    width: 40px;
+    height: 3px;
+    margin-top: 31px;
+    background: #bec5c9;
+}
+@media all and (max-width: 740px) {
+    .popup__choice-block {
+        width: 28px;
+    }
+}
+@media all and (max-width: 340px) {
+    .popup__choice-block {
+        width: 10px;
+    }
+}

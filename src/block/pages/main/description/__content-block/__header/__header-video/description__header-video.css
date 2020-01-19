@@ -1,0 +1,56 @@
+@import url("./__button/description__button.css");
+@import url("./__close/description__close.css");
+@import url("./__close/description__close_is_opened.css");
+@import url("./__button/description__button_is_opened.css");
+@import url("./__video/description__video.css");
+.description__header-video {
+    position: relative;
+    width: 860px;
+    height: 484px;
+    background-size: cover;
+    display: flex;
+}
+@media all and (max-width: 1340px) {
+    .description__header-video {
+        width: 704px;
+        height: 396px;
+    }
+}
+@media all and (max-width: 1190px) {
+    .description__header-video {
+        width: 860px;
+        height: 484px;
+        order: -1;
+    }
+} 
+@media all and (max-width: 890px) {
+    .description__header-video {
+        width: 704px;
+        height: 396px;
+
+    }
+}
+@media all and (max-width: 730px) {
+    .description__header-video {
+        width: 520px;
+        height: 290px;
+    }
+}
+@media all and (max-width: 550px) {
+    .description__header-video {
+        width: 440px;
+        height: 248px;
+    }
+}
+@media all and (max-width: 460px) {
+    .description__header-video {
+        width: 360px;
+        height: 280px;
+    }
+}
+@media all and (max-width: 359px) {
+    .description__header-video {
+        width: 320px;
+        height: 230px;
+    }
+}

@@ -1,0 +1,12 @@
+@import url("./__container/gratitude__container.css");
+.gratitude {
+    position: fixed;
+    display: none;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    width: 1440px;
+    background: rgba(147, 151, 203, 0.8);
+    justify-content: center;
+    z-index: 5;
+}

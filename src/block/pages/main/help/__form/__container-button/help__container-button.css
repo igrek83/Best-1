@@ -1,0 +1,17 @@
+@import url("./__button/help__button.css");
+@import url("./__button/help__button_theme_monthly.css");
+@import url("./__button/help__button_theme_once.css");
+.help__container-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+@media all and (max-width: 740px) {
+    .help__container-button {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,8 @@
+.header__social-block_is_opened {
+    display: flex;
+}
+@media all and (max-width: 700px) {
+.header__social-block_is_opened {
+   display: none;
+   }
+}

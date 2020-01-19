@@ -1,0 +1,14 @@
+.donation__block-summa {
+    text-align: center;
+    font-family: "HelveticaNeueCyr-Bold";
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #5a3f98;
+}
+@media all and (max-width: 360px) {
+    .donation__block-summa {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,21 @@
+@import url("./__slider-image/description__slider-image.css");
+.description__slider-image-block {
+    width: 500%;
+    transition: all 0.5s;
+    display: flex;
+}
+#slider-a:checked~.description__slider-image-container .description__slider-image-block {
+    transform: translate(0);
+}
+#slider-b:checked~.description__slider-image-container .description__slider-image-block {
+    transform: translate(-20%);
+}
+#slider-c:checked~.description__slider-image-container .description__slider-image-block {
+    transform: translate(-40%);
+}
+#slider-d:checked~.description__slider-image-container .description__slider-image-block {
+    transform: translate(-60%);
+}
+#slider-e:checked~.description__slider-image-container .description__slider-image-block {
+    transform: translate(-80%);
+}

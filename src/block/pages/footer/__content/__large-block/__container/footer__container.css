@@ -1,0 +1,19 @@
+@import url("./__title/footer__title.css");
+@import url("./__social-block/footer__social-block.css");
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
+@media all and (max-width: 1150px) {
+    .footer__container {
+        position: relative;
+        margin-left: 0px;
+        margin-right: 0px;
+        order: -1;
+    }
+}
+@media all and (max-width: 620px) {
+    .footer__container {
+       align-items: center;
+    }
+}

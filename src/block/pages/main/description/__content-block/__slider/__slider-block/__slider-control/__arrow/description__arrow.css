@@ -1,0 +1,13 @@
+.description__arrow {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    width: 15px;
+    height: 15px;
+} 
+@media all and (max-width: 768px) {
+    .description__arrow {
+        display: none;
+    }
+}

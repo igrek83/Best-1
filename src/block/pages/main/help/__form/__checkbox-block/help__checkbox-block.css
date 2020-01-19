@@ -1,0 +1,6 @@
+@import url("./__checkbox/help__checkbox.css");
+@import url("./__checkbox-style/help__checkbox-style.css");
+@import url("./__checkbox-description/help__checkbox-description.css");
+.help__checkbox-block {
+    display: flex;
+}

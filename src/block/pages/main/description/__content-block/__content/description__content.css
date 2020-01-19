@@ -1,0 +1,7 @@
+@import url("./__block/description__block.css");
+.description__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

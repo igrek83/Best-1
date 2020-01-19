@@ -1,0 +1,9 @@
+.other-help__social-icon_name_fb {
+    background-image: url("../../../../../../images/fb-fiolet.svg");
+}
+.other-help__social-icon_name_fb:hover {
+    background-image: url("../../../../../../images/fb-orange.svg");
+}
+.other-help__social-icon_name_fb:active {
+    background-image: url("../../../../../../images/fb-orange.svg");
+}

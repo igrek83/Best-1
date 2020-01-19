@@ -1,0 +1,12 @@
+.popup__button_theme_monthly {
+    background: #9397CB;
+    color: #FFFFFF;
+}
+.popup__button_theme_monthly:focus {
+    background: #5A3F98;
+}
+@media all and (max-width: 740px) {
+    .popup__button_theme_monthly {
+        margin-bottom: 24px;
+    }
+}

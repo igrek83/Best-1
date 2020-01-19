@@ -1,0 +1,18 @@
+@import url("./__title/coach__title.css");
+@import url("./__description/coach__description.css");
+.coach__container {
+    width: 604px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 58px;
+}
+@media all and (max-width: 768px) {
+    .coach__container {
+        width: 500px;
+    }
+}
+@media all and (max-width: 525px) {
+    .coach__container {
+        width: 312px;
+    }
+}

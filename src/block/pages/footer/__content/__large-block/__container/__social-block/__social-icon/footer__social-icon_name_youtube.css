@@ -1,0 +1,6 @@
+.footer__social-icon_name_youtube {
+    background-image: url("../../../../../../../../images/youtube-black.svg");
+}
+.footer__social-icon_name_youtube:hover {
+    background-image: url("../../../../../../../../images/youtube-fiolet.svg");
+}

@@ -1,0 +1,20 @@
+@import url("./__large-container/other-help__large-container.css");
+.other-help__block {
+   width: 1236px; 
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 47px;
+   align-items: center;
+}
+@media all and (max-width: 1300px) {
+   .other-help__block {
+       width: 1100px;
+   }
+}
+@media all and (max-width: 1130px) {
+   .other-help__block {
+       width: 100%;
+       flex-direction: column;
+       justify-content: flex-start;
+   }
+}

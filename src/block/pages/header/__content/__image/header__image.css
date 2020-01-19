@@ -1,0 +1,13 @@
+.header__image {
+    background-size: cover;
+    width: 68px;
+    height: 76px;
+    margin-right: 60px;
+}
+@media all and (max-width: 460px) {
+    .header__image {
+        width: 64px;
+        height: 64px;
+        margin-right: 0;
+    }
+}

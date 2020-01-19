@@ -1,0 +1,16 @@
+.donation__summa {
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "HelveticaNeueCyr-Roman";
+    color: #333235;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+@media all and (max-width: 435px) {
+    .donation__summa {
+        width: 300px;
+        margin-top: 16px;
+    }
+}

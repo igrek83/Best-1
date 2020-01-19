@@ -1,0 +1,14 @@
+.help__about-error {
+    visibility: hidden;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    font-family: "HelveticaNeueCyr-Roman";
+    color: #ED180B; 
+}
+@media all and (max-width: 740px) {
+    .help__about-error {
+        width: 282px;
+        align-items: center;
+    }
+}

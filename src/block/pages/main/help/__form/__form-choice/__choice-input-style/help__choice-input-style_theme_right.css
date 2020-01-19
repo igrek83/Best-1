@@ -1,0 +1,9 @@
+.help__choice-input-style_theme_right {
+    width: 141px;
+}
+@media all and (max-width: 320px) {
+    .help__choice-input-style_theme_right {
+        width: 136px;
+        
+    }
+}

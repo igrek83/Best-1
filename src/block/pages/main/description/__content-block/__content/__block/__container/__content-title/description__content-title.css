@@ -1,0 +1,14 @@
+.description__content-title {
+    font-family: "HelveticaNeueCyr-Roman";
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #5A3F98;
+    margin-bottom: 31px;
+}
+@media all and (max-width: 768px) {
+    .description__content-title {
+        margin-bottom: 20px;
+    }
+}

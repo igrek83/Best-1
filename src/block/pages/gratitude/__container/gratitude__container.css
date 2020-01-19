@@ -1,0 +1,44 @@
+@import url("./__close/gratitude__close.css");
+@import url("./__title/gratitude__title.css");
+@import url("./__image/gratitude__image.css");
+@import url("./__social/gratitude__social.css");
+@import url("./__text/gratitude__text.css");
+.gratitude__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+    width: 840px;
+    background: #FFFFFF;
+    border-radius:12px;
+    padding-bottom: 50px;
+}
+@media all and (max-width: 950px) {
+    .gratitude__container {
+        width: 720px;
+    }
+}
+@media all and (max-width: 810px) {
+    .gratitude__container {
+        width: 500px;
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+@media all and (max-width: 570px) {
+    .gratitude__container {
+        width: 360px;
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+@media all and (max-width: 370px) {
+    .gratitude__container {
+        width: 334px;
+    }
+}
+@media all and (max-width: 340px) {
+    .gratitude__container {
+        width: 314px;
+    }
+}

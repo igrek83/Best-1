@@ -1,0 +1,23 @@
+@import url("./__text/footer__text.css");
+@import url("./__text/footer__text_theme_bold.css");
+.footer__block {
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 157px;
+}
+@media all and  (max-width: 1350px) {
+    .footer__block {
+        margin-right: 100px;
+    }
+}
+@media all and  (max-width: 1250px) {
+    .footer__block {
+        margin-right: 50px;
+    }
+}
+@media all and  (max-width: 1200px) {
+    .footer__block {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+@import url("./__about-description/help__about-description.css");
+@import url("./__about-input/help__about-input.css");
+@Import url("./__about-error/help__about-error.css");
+@Import url("./__about-error/help__about-error_is_opened.css");
+.help__about-block {
+    max-width: 346px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+    flex: 1;
+}
+@media all and (max-width: 740px) {
+    .help__about-block {
+        max-width: 282px;
+        align-items: center;
+    }
+}

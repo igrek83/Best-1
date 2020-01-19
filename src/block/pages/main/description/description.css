@@ -1,0 +1,19 @@
+@import url("./__content-block/description__content-block.css");
+.description {
+    width: 100%;
+    padding-top: 172px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+@media all and (max-width: 768px) {
+    .description {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
+@media all and (max-width: 460px) {
+    .description {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

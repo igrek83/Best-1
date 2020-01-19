@@ -1,0 +1,9 @@
+.other-help__social-icon_name_twitter {
+    background-image: url("../../../../../../images/twitter-fiolet.svg");
+}
+.other-help__social-icon_name_twitter:hover {
+    background-image: url("../../../../../../images/twitter-orange.svg");
+}
+.other-help__social-icon_name_twitter:active {
+    background-image: url("../../../../../../images/twitter-orange.svg");
+}

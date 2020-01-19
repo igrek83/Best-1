@@ -1,0 +1,14 @@
+.popup__checkbox-description {
+    font-size: 14px;
+    line-height: 16px;
+    color: #333235;
+    letter-spacing: 0.5px;
+    padding-left: 8px;
+    font-family: "HelveticaNeueCyr-Roman";
+    vertical-align: top;
+}
+@media all and (max-width: 740px) {
+    .popup__checkbox-description {
+        width: 250px;
+    }
+}

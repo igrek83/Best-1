@@ -1,0 +1,7 @@
+@import url("./__block/coach__block.css");
+.coach {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

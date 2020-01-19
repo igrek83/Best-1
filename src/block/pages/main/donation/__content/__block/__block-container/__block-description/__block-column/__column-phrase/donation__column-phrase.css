@@ -1,0 +1,12 @@
+.donation__column-phrase {
+    padding-bottom: 12px;
+}
+@media all and (max-width: 360px) {
+    .donation__column-phrase {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        color: #333235;
+    }
+}

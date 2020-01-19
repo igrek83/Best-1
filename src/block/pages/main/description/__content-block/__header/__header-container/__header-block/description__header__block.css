@@ -1,0 +1,14 @@
+.description__header-block {
+    width: 260px;
+    margin-top: 24px;
+}
+@media all and (max-width: 1190px) {
+    .description__header-block {
+        width: 600px;
+    }
+}
+@media all and (max-width: 768px) {
+    .description__header-block {
+        width: 100%;
+    }
+}

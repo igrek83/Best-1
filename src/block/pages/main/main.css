@@ -1,0 +1,11 @@
+@import url("./description/description.css");
+@import url("./donation/donation.css");
+@import url("./help/help.css");
+@import url("./coach/coach.css");
+@import url("./other-help/other-help.css");
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

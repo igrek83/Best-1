@@ -1,0 +1,30 @@
+@import url("./__slider-image-block/description__slider-image-block.css");
+.description__slider-image-container {
+    width: 712px;
+    overflow: hidden;
+}
+@media all and (max-width: 768px) {
+    .description__slider-image-container {
+       width: 704px;
+    }
+}
+@media all and (max-width: 720px) {
+    .description__slider-image-container {
+       width: 500px;
+    }
+}
+@media all and (max-width: 520px) {
+    .description__slider-image-container {
+       width: 360px;
+    }
+}
+@media all and (max-width: 360px) {
+    .description__slider-image-container {
+       width: 320px;
+    }
+}
+@media all and (max-width: 320px) {
+    .description__slider-image-container {
+       width: 300px;
+    }
+}

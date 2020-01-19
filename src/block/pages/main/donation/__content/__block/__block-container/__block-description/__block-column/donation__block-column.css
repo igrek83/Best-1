@@ -1,0 +1,6 @@
+@import url("./__column-phrase/donation__column-phrase.css");
+@import url("./__column-phrase/donation__column-phrase_theme_right.css");
+.donation__block-column {
+    display: flex;
+    flex-direction: column;
+}

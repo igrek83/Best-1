@@ -1,0 +1,10 @@
+@import url("./__border-background/help__border-background.css");
+.help__block-border {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    height: 14px;
+    border: 2px solid #FC691B;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}

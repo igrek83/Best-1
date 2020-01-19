@@ -1,0 +1,13 @@
+@import url("./__button/footer__button.css");
+@import url("./__arrow/footer__arrow.css");
+.footer__block-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@media all and (max-width: 620px) {
+    .footer__block-button {
+        align-items: center;
+        margin-top: 85px;
+    }
+}

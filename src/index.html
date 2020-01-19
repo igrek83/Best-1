@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лучшие друзья</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+</head>
+<body>
+    <div class="pages">
+        <header class="header">
+            <div class="header__content">
+                <img src="<%=require(`./images/emblem.svg`).default%>" alt="" class="header__image">
+                <div class="header__block">
+                    <h1 class="header__title">Лучшие <span class="text-bold">Друзья </span>BEST <span class="text-bold">BUDDIES </span>RUSSIA</h1>
+                    <p class="header__description">Фонд поддержки лиц с нарушениями развития и интеллекта</p>
+                </div>
+                <button type="button" class="header__vector"></button>
+                <div class="header__social-block">  
+                    <a href="" id="headerTwitter" target="_blank">
+                        <div class="header__social-icon header__social-icon_name_twitter"></div>
+                    </a>
+                    <a href="" id="headerVk" target="_blank">
+                        <div class="header__social-icon header__social-icon_name_vk"></div>
+                    </a>
+                    <a href="" id="headerFb" target="_blank">
+                        <div class="header__social-icon header__social-icon_name_fb"></div>
+                    </a>
+                    <div id="headerSubtract" class="header__social-icon header__social-icon_name_subtract"></div>
+                </div>
+                <button type="button" class="header__button">ПОМОЧЬ</button>
+            </div>    
+        </header>
+        <section class="popup">
+            <div class="popup__container">
+                <img src="<%=require(`./images/close.svg`).default%>" alt="" class="popup__close">
+                <h2 class="popup__title">Спасибо, что решили помочь ребятам с нарушением развития !</h2>
+                <form name="popupForm" class="popup__form" novalidate>
+                    <div class="popup__form-choice">
+                        <input type="radio" name="popup-choice" id="popup-card" class="popup__choice-input" checked>
+                        <label for="popup-card" class="popup__choice-input-style popup__choice-input-style_theme_left">Банковская карта
+                            <span class="popup__border"></span>
+                        </label>
+                        <div class="popup__choice-block"></div>  
+                        <input type="radio" name="popup-choice" id="popup-yandex-money" class="popup__choice-input">
+                        <label for="popup-yandex-money" class="popup__choice-input-style popup__choice-input-style_theme_right">Яндекс.Деньги
+                            <span class="popup__border"></span>
+                        </label>
+                    </div>
+                    <div class="popup__form-summa">
+                        <input type="radio" name="summas" id="popupHundred" value="100" class="popup__summa-input">
+                        <label for="popupHundred" class="popup__summa-input-style popup__summa-input-style_theme_right">100 ₽</label>
+                        <input type="radio" name="summas" id="popupThreeHundred"  value="300" class="popup__summa-input">
+                        <label for="popupThreeHundred" class="popup__summa-input-style popup__summa-input-style_theme_right">300 ₽</label>
+                        <input type="radio" name="summas" id="popupFiveHundred" value="500" class="popup__summa-input">
+                        <label for="popupFiveHundred" class="popup__summa-input-style" tabindex="5">500 ₽</label>
+                        <input type="radio" name="summas" id="popupChiliad" value="1000" class="popup__summa-input">
+                        <label for="popupChiliad" class="popup__summa-input-style popup__summa-input-style_theme_right">1000 ₽</label>
+                        <input type="radio" name="summas" id="popup-random-summa" class="popup__summa-input" checked>
+                        <label for="popup-random-summa" class="popup__random-summa-block"></label>
+                        <input type="number" name="popupRandomSumma" class="popup__random-summa-input" step="10" placeholder="Ваша сумма" min="10" id="popupRandomSumma" value="50">
+                        <p class="popup__symbol-rubl">₽</p>
+                    </div>
+                    <div class="popup__form-about">
+                        <div class="popup__about-block">
+                            <p class="popup__about-description">Ваше имя *</p>
+                            <input type="text" name="names" placeholder="Иван Иванов" minlength="1" maxlength="255" class="popup__about-input" required>
+                            <p class="popup__about-error"></p>
+                        </div>
+                        <div class="popup__about-block">
+                            <p class="popup__about-description">Ваш e-mail *</p>
+                            <input type="email" name="emails" placeholder="ivanivanov@gmail.com" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,8}$" class="popup__about-input" required>
+                            <p class="popup__about-error"></p>
+                        </div>
+                    </div>
+                    <p class="popup__description">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать, кого благодарить и куда отправить уведомление о получении пожертвования</p>  
+                    <div class="popup__container-button">
+                        <button type="submit" id="popupMonthlyButton" class="popup__button popup__button_theme_monthly" disabled>ХОЧУ ПОМОГАТЬ ЕЖЕМЕСЯЧНО</button>    
+                        <button type="submit" id="popupOnceButton" class="popup__button popup__button_theme__once" disabled>ПОМОЧЬ ОДИН РАЗ</button>
+                    </div>
+                    <div class="popup__checkbox-block">
+                        <input type="checkbox" id="agreements" class="popup__checkbox" checked>
+                        <label for="agreements" class="popup__checkbox-style"></label>
+                        <span class="popup__checkbox-description">Я принимаю правила, изложенные в <a href="#" tabindex="0">Соглашении об использовании персональных данных</a></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="gratitude">
+            <div class="gratitude__container">   
+                <img src="<%=require(`./images/close.svg`).default%>" alt="" class="gratitude__close">
+                <h2 class="gratitude__title"></h2>
+                <img src="<%=require(`./images/descriptionbackground.png`).default%>" alt="" class="gratitude__image">
+                <p class="text-phrase gratitude__text">Расскажите своим друзьям о фонде «Лучшие друзья» и о вашем вкладе:</p>
+                <div class="gratitude__social">
+                    <a href="" id="gratitudeTwitter" target="_blank">
+                        <div class="gratitude__social-icon gratitude__social-icon_name_twitter"></div>
+                    </a>
+                    <a href="" id="gratitudeVk" target="_blank">
+                        <div class="gratitude__social-icon gratitude__social-icon_name_vk"></div>
+                    </a>
+                    <a href="" id="gratitudeFb" target="_blank">
+                        <div class="gratitude__social-icon gratitude__social-icon_name_fb"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+   
+        <main class="main">
+            <section class="description" id="beginner">
+                <div class="header__content-block">
+                    <div class="description__header">
+                        <div class="description__header-container">     
+                            <p class="text-phrase">Фонд «Лучшие друзья» проводит регулярные занятия по футболу и волейболу для людей с нарушением развития и без. Постоянные занятия требуют регулярных расходов. Поэтому <span class="text-bold">нужна ваша помощь.</span></p>
+                            <div class="description__header-block">
+                                <p class="text-phrase">Чтобы у ребят была возможность тренироваться в течение года, <span class="text-bold">необходимо собрать 765 536 руб.</span></p>
+                            </div>
+                        </div>
+                        <div class="description__header-video">
+                            <video autoplay muted loop class="description__video" id="video">
+                                <source src="https://pictures.s3.yandex.net/iframes_topic/1.mp4" type="video/mp4">  
+                            </video>
+                            <img src="<%=require(`./images/closew.svg`).default%>" alt="" class="description__close">
+                            <div class="description__button" tabindex="7">
+                                <div class="description__start"></div>
+                                <p class="description__button-text">Смотреть видео</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__content">
+                        <div class="description__block">
+                            <img src="<%=require(`./images/aa.jpg`).default%>" alt="" class="description__image">
+                            <div class="description__container">
+                                <div class="description__content-text">
+                                    <p class="text-phrase description__phrase description__phrase_theme_bottom">У Антона фенилкетонурия – редкое наследственное заболевание, из-за которого у молодого человека появилось нарушение развития. После окончания учебы единственным спортивным мероприятием для него стала зарядка по утрам</p>
+                                    <p class="text-phrase description__phrase description__phrase_theme_bottom">Мама Антона Ирина долго искала командные занятия, на которые берут людей с ментальной инвалидностью, но безуспешно. И Антон стал коротать время за просмотром спортивных передач, мечтая однажды оказаться на поле.</p>
+                                    <p class="text-phrase description__phrase">Все изменилось, когда фонд «Лучшие друзья» начал проводить регулярные занятия по футболу и волейболу для людей с нарушением развития и без.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description__block">
+                            <div class="description__container">
+                                <h2 class="description__content-title">ИГРА, ДОСТУПНАЯ КАЖДОМУ</h2>
+                                <div class="description__content-text">
+                                    <p class="text-phrase description__phrase description__phrase_theme_bottom">Многие участники фонда до начала тренировок даже не знали, что они могут заниматься спортом на равных с волонтерами. Спорт для большинства из них был физкультурой в школе. Закончилась школа – закончился и спорт. Так размышлял и Антон Карамышев.</p>
+                                    <p class="text-phrase description__phrase">Теперь Антон не пропускает ни одной тренировки: здесь у него появились новые товарищи и любимое увлечение. «Мне нравится играть, – рассказывает Антон. – Я чувствую себя намного лучше, когда моя команда побеждает. Моя команда – это мои друзья».</p>
+                                </div>
+                            </div>
+                            <img src="<%=require(`./images/ab.jpg`).default%>" alt="" class="description__image">
+                        </div>
+                        <div class="description__block">
+                            <img src="<%=require(`./images/ac.jpg`).default%>" alt="" class="description__image">
+                            <div class="description__container">
+                                <h2 class="description__content-title">ВМЕСТЕ К СПОРТИВНЫМ УСПЕХАМ</h2>
+                                <p class="text-phrase description__phrase description__phrase_theme_bottom">Ирина, мама Антона, отмечает: «Я вижу, как сильно сын изменился за этот год. Он стал более общительным и уверенным в себе. <span class="text-bold">Спорт мотивирует </span>его двигаться к новым победам, и после каждой тренировки я радуюсь вместе с ним».</p>
+                                <p class="text-phrase description__phrase">Уже год ребята с нарушением развития и интеллекта собираются вместе раз в неделю и весело проводят время. Во время игры не важно, есть ли у тебя инвалидность или нет, новичок ты или опытный игрок: <span class="text-bold">«Лучшие друзья» всегда поддерживают друг друга.</span></p>
+                            </div>
+                        </div>
+                        <div class="description__block">
+                            <div class="description__container">
+                                <h2 class="description__content-title">СПОРТ = ДРУЖБА</h2>
+                                <p class="text-phrase description__phrase description__phrase_theme_bottom">«Спорт помогает мне быть здоровым и счастливым», «Классно давать пас своему другу», «Когда я бегу, я чувствую себя героем фильма», – так участники фонда «Лучшие друзья» рассказывают про совместные тренировки по футболу и волейболу.</p>
+                                <p class="text-phrase description__phrase"><span class="text-bold">Антону и его новым друзьям важны тренировки,</span> так как это способ для них выйти из дома и оказаться в компании людей, которые всегда помогут и поддержат. Также <span class="text-bold">тренировки помогают ребятам</span> лучше понять свое тело и не терять форму, которую некоторым сложно поддерживать из-за особенностей здоровья.</p>
+                            </div>
+                            <img src="<%=require(`./images/ae.jpg`).default%>" alt="" class="description__image">
+                        </div>
+                    </div>
+                    <div class="description__slider">
+                        <div class="description__slider-block">
+                            <input type="radio" id="slider-a" name="slider" class="description__input" checked>
+                            <input type="radio" id="slider-b" name="slider" class="description__input">
+                            <input type="radio" id="slider-c" name="slider" class="description__input"> 
+                            <input type="radio" id="slider-d" name="slider" class="description__input">
+                            <input type="radio" id="slider-e" name="slider" class="description__input">   
+                            <div class="description__slider-control">
+                                <button type="button" class="description__arrow description__arrow_theme_left"></button>      
+                                <label for="slider-a" class="description__style-input"></label>
+                                <label for="slider-b" class="description__style-input"></label>                     
+                                <label for="slider-c" class="description__style-input"></label>
+                                <label for="slider-d" class="description__style-input"></label>
+                                <label for="slider-e" class="description__style-input"></label>
+                                <button type="button" class="description__arrow description__arrow_theme_right"></button>     
+                            </div>
+                            <div class="description__slider-image-container">
+                                <div class="description__slider-image-block">
+                                    <img src="<%=require(`./images/slider-a.jpg`).default%>" alt="" class="description__slider-image">
+                                    <img src="<%=require('./images/slider-b.jpg').default%>" alt="" class="description__slider-image">
+                                    <img src="<%=require('./images/slider-c.jpg').default%>" alt="" class="description__slider-image">
+                                    <img src="<%=require('./images/slider-d.jpg').default%>" alt="" class="description__slider-image">
+                                    <img src="<%=require('./images/slider-e.jpg').default%>" alt="" class="description__slider-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description__slider-container">
+                            <div class="description__slider-phrase">
+                                <p class="text-phrase">Ваша помощь — это возможность людям с ментальной инвалидностью стать чемпионами, не так, как принято в обществе, а для самих себя, своих родных и друзей.</p>
+                            </div>
+                            <p class="text-phrase description__slider-phrase">Ведь каждому, независимо от инвалидности, так важно найти дело, которое помогает жить и не чувствовать себя «чужим».</p>
+                            <p class="description__slider-help">Давайте поможем ребятам с нарушениями развития вместе!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="donation" id="donation">
+                <div class="donation__content">
+                    <p class="donation__description">Годовой бюджет на проведение регулярных тренировок по футболу и волейболу для ребят с нарушением развития</p>
+                    <p class="donation__summa">764 536 ₽</p>
+                    <div class="donation__block">
+                        <div class="donation__block-container">
+                            <h3 class="donation__block-title">Проведение занятий по футболу</h3>
+                            <div class="donation__block-description">
+                                <ul class="donation__block-column">
+                                    <li class="text-phrase donation__column-phrase">Аренда зала</li>
+                                    <li class="text-phrase donation__column-phrase">Инвентарь</li>
+                                    <li class="text-phrase donation__column-phrase">Зарплата тренеров</li>
+                                    <li class="text-phrase donation__column-phrase">Страховые взносы 27,1%</li>
+                                </ul>
+                                <ul class="donation__block-column">
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">240 000 ₽</li>
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">5 000 ₽</li>
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">108 000 ₽</li>
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">29 268 ₽</li>
+                                </ul>                             
+                            </div>
+                            <p class="donation__block-summa">382 268 ₽</p>
+                        </div>
+                        <div class="donation__block-container">
+                            <h3 class="donation__block-title">Проведение занятий по волейболу</h3>
+                            <div class="donation__block-description">
+                                <ul class="donation__block-column">
+                                    <li class="text-phrase donation__column-phrase">Аренда зала</li>
+                                    <li class="text-phrase donation__column-phrase">Инвентарь</li>
+                                    <li class="text-phrase donation__column-phrase">Зарплата тренеров</li>
+                                    <li class="text-phrase donation__column-phrase">Страховые взносы 27,1%</li>
+                                </ul>
+                                <ul class="donation__block-column">
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">240 000 ₽</li>
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">5 000 ₽</li>
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">108 000 ₽</li>
+                                    <li class="text-phrase donation__column-phrase donation__column-phrase_theme_right">29 268 ₽</li>
+                                </ul>
+                            </div>
+                            <p class="donation__block-summa">382 268 ₽</p>
+                        </div>
+                    </div> 
+                </div>          
+            </section>
+            <section class="help">
+                <form name="helpForm" class="help__form" novalidate>
+                    <div class="help__form-choice">
+                        <input type="radio" name="choice" id="card" class="help__choice-input" checked>
+                        <label for="card" class="help__choice-input-style help__choice-input-style_theme_left">Банковская карта
+                            <span class="help__border"></span>
+                        </label>
+                        <div class="help__choice-block"></div>  
+                        <input type="radio" name="choice" id="yandex-money" class="help__choice-input">
+                        <label for="yandex-money" class="help__choice-input-style help__choice-input-style_theme_right">Яндекс.Деньги
+                            <span class="help__border"></span>
+                        </label>
+                    </div>
+                    <div class="help__form-summa">
+                        <input type="radio" name="summa" id="hundred" class="help__summa-input" value="100">
+                        <label for="hundred" class="help__summa-input-style help__summa-input-style_theme_right">100 ₽</label>
+                        <input type="radio" name="summa" id="threeHundred" class="help__summa-input" value="300">
+                        <label for="threeHundred" class="help__summa-input-style help__summa-input-style_theme_right">300 ₽</label>
+                        <input type="radio" name="summa" id="fiveHundred" class="help__summa-input" value="500">
+                        <label for="fiveHundred" class="help__summa-input-style">500 ₽</label>
+                        <input type="radio" name="summa" id="chiliad" class="help__summa-input" value="1000">
+                        <label for="chiliad" class="help__summa-input-style help__summa-input-style_theme_right">1000 ₽</label>
+                        <input type="radio" name="summa" id="help-random-summa" class="help__summa-input" checked>
+                        <label for="help-random-summa" class="help__random-summa-block"></label>
+                        <input type="number" name="helpRandomSumma" class="help__random-summa-input" placeholder="Ваша сумма" min="10" step="10" id="helpRandomSumma" value="50">
+                        <span class="help__symbol-rubl">₽</span>
+                    </div>
+                    <div class="help__form-about">
+                        <div class="help__about-block">
+                            <p class="help__about-description">Ваше имя *</p>
+                            <input type="text" name="name" placeholder="Иван Иванов" minlength="1" maxlength="255" class="help__about-input" required>
+                            <p class="help__about-error"></p>
+                        </div>
+                        <div class="help__about-block">
+                            <p class="help__about-description">Ваш e-mail *</p>
+                            <input type="email" name="email" placeholder="ivanivanov@gmail.com" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,8}$" class="help__about-input" required>
+                            <p class="help__about-error"></p>
+                        </div>
+                    </div>
+                    <p class="help__description">Оба поля обязательны для заполнения. Эти данные нам нужны только для того, чтобы знать, кого благодарить и куда отправить уведомление о получении пожертвования</p>  
+                    <div class="help__container-button">
+                        <button type="submit" id="helpMonthlyButton" class="help__button help__button_theme_monthly" disabled>ХОЧУ ПОМОГАТЬ ЕЖЕМЕСЯЧНО</button>    
+                        <button type="submit" id="helpOnceButton" class="help__button help__button_theme__once" disabled>ПОМОЧЬ ОДИН РАЗ</button>
+                    </div>
+                    <div class="help__checkbox-block">
+                        <input type="checkbox" id="agreement" class="help__checkbox" checked>
+                        <label for="agreement" class="help__checkbox-style"></label>
+                        <span class="help__checkbox-description">Я принимаю правила, изложенные в <a href="#">Соглашении об использовании персональных данных</a></span>
+                    </div>
+                </form>
+                <div class="help__block">
+                    <div class="help__block-border">
+                        <div class="help__border-background"></div>
+                    </div>
+                    <p class="help__block-summa">Собрали 3 374 из 764 536 рублей</p>
+                </div>
+                <img src="<%=require('./images/img.png').default%>" alt="" class="help__image">
+            </section>
+            <section class="coach">
+                <div class="coach__block">
+                    <img src="<%=require('./images/yaroslav.jpg').default%>" alt="" class="coach__image">
+                    <div class="coach__container">
+                        <h3 class="coach__title">Ярослав Беляков, тренер по волейболу:</h3>
+                        <p class="text-phrase">Нашим ребятам очень нужен спорт, как и любым другим городским жителям. Но не так уж просто взять и заняться им, особенно если сам не осознаешь эту необходимость. А вот у нас ребята могут хотя бы раз в неделю как следует размяться и потренироваться. К тому же каждый старается и выкладывается на полную, чтобы не подводить остальных, поэтому игры получаются азартными напряженными и интересными.</p>
+                    </div>
+                </div>
+                <div class="coach__block">
+                    <img src="<%=require('./images/islam.jpg').default%>" alt="" class="coach__image">
+                    <div class="coach__container">
+                        <h3 class="coach__title">Ислам Юсупов, тренер по футболу:</h3>
+                        <p class="text-phrase">Футбольные занятия для ребят - это не столько способ достичь определенных достижений в спорте, сколько возможность регулярно видеться с друзьями за общим хобби и проводить время с пользой. Занятия помогают ребятам найти поддержку и понимание в результате командной работы. В процессе тренировок зарождается дружба, которая помогает перестать чувствовать себя одиноким.</p>
+                    </div>
+                </div>
+                <div class="coach__block">
+                    <img src="<%=require('./images/diana.jpg').default%>" alt="" class="coach__image">
+                    <div class="coach__container">
+                        <h3 class="coach__title">Диана Анищенко, тренер по волейболу:</h3>
+                        <p class="text-phrase">Мне нравится, как ребята вместе радуются победам и приободряют друг друга в случае неудачи. Я наблюдаю, как они учатся друг</p>
+                        <p class="text-phrase">у друга правильно играть и помогают более слабым игрокам.</p>
+                        <p class="text-phrase coach__description">Регулярные тренировки дают участникам фонда возможность</p>
+                        <p class="text-phrase">не только заниматься спортом, но и найти поддержку, которой им не хватает</p>
+                    </div>
+                </div>
+            </section>
+            <section class="other-help">
+                <p class="text-phrase other-help__description">Помочь ребятам с нарушением развития и интеллекта заниматься спортом можно не только пожертвованиями. По всем вопросам помощи обращайтесь к координатору проекта:</p>
+                <a href="mailto:diana@bestbuddies.ru" target="_blank" class="other-help__email">diana@bestbuddies.ru</a>
+                <div class="other-help__block">
+                    <div class="other-help__large-container">
+                        <div class="other-help__container">
+                            <img src="<%=require('./images/rooms.png').default%>" alt="" class="other-help__image">
+                            <p class="other-help__title">Помочь<br />с помещением для занятий</p>
+                        </div>
+                        <div class="other-help__container">
+                            <img src="<%=require('./images/different.png').default%>" alt="" class="other-help__image">
+                            <p class="other-help__title">Подарить инвентарь</p>
+                        </div>
+                    </div>
+                    <div class="other-help__large-container">
+                        <div class="other-help__container">
+                            <img src="<%=require('./images/volunteers.png').default%>" alt="" class="other-help__image">
+                            <p class="other-help__title">Стать спортивным волонтёром</p>
+                        </div>
+                        <div class="other-help__container">
+                            <img src="<%=require('./images/partnership.png').default%>" alt="" class="other-help__image">
+                            <p class="other-help__title">Стать партнёром проекта</p>
+                        </div>
+                    </div>  
+                </div>
+                <p class="text-phrase other-help__text">Расскажите о проекте друзьям и знакомым в социальных сетях:</p>
+                <div class="other-help__social-block">  
+                    <a href="" id="twitter" target="_blank">
+                        <div class="other-help__social-icon other-help__social-icon_name_twitter"></div>
+                    </a>
+                    <a href="" id="vk" target="_blank">
+                        <div class="other-help__social-icon other-help__social-icon_name_vk"></div>
+                    </a>
+                    <a href="" id="fb" target="_blank">
+                        <div class="other-help__social-icon other-help__social-icon_name_fb"></div>
+                    </a>
+                    <div id="subtract" class="other-help__social-icon other-help__social-icon_name_subtract"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <img src="<%=require('./images/emblem.svg').default%>" alt="" class="footer__image">
+                <div class="footer__large-block">
+                    <div class="footer__block">
+                        <p class="footer__text">115114, Москва, ул. Летниковская, дом 11/10, строение 5, подъезд №1 (в бизнес-центре «Capital House»)</p>
+                        <p class="footer__text footer__text_theme_bold">+7(495)725-39-82 office@bestbuddies.ru</p>
+                    </div>
+                    <div class="footer__container">
+                        <h2 class="footer__title">Лучшие <span class="text-bold">Друзья </span>BEST <span class="text-bold">BUDDIES </span>RUSSIA</h2>
+                        <p class="footer__text">Фонд поддержки лиц с нарушениями</p>
+                        <p class="footer__text">развития и интеллекта</p>
+                        <div class="footer__social-block">
+                            <a href="https://vk.com/best_buddies" target="_blank">
+                                <div class="footer__social-icon footer__social-icon_name_vk"></div>
+                            </a>
+                            <a href="https://www.facebook.com/BestBuddiesRu/" target="_blank">
+                                <div class="footer__social-icon footer__social-icon_name_fb"></div>
+                            </a>
+                            <a href="https://www.youtube.com/user/bestbuddiesru" target="_blank">
+                                <div class="footer__social-icon footer__social-icon_name_youtube"></div>
+                            </a>
+                            <a href="https://www.instagram.com/bestbuddiesrussia/" target="_blank">
+                                <div class="footer__social-icon footer__social-icon_name_instagram"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__block-button">
+                    <button type="button" class="footer__button">ПОМОЧЬ</button>
+                    <a href="#beginner"><div class="footer__arrow"></div></a>    
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

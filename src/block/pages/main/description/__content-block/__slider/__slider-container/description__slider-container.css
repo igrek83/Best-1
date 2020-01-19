@@ -1,0 +1,23 @@
+@import url("./__slider-phrase/description__slider-phrase.css");
+@import url("./__slider-help/description__slider-help.css");
+.description__slider-container {
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 58px;
+}
+@media all and (max-width: 1340px) {
+    .description__slider-container {
+        width: 700px;
+    }
+}
+@media all and (max-width: 785px) {
+    .description__slider-container {
+        width: 500px;
+    }
+}
+@media all and (max-width: 525px) {
+    .description__slider-container {
+        width: 312px;
+    }
+}

@@ -1,0 +1,24 @@
+@import url("./__content-title/description__content-title.css");
+@import url("./__content-text/description__content-text.css");
+.description__container {
+    width: 604px;
+    display: flex;
+    flex-direction: column;
+}
+@media all and (max-width: 1340px) {
+    .description__container {
+        width: 780px;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+@media all and (max-width: 840px) {
+    .description__container {
+        width: 100%;
+    }
+}
+@media all and (max-width: 530px) {
+    .description__container {
+        width: 312px;
+    }
+}

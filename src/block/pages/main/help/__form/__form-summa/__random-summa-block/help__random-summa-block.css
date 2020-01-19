@@ -1,0 +1,30 @@
+.help__random-summa-block {
+    width: 226px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #9397CB;
+    padding-left: 20px;
+    padding-right: 16px;
+}
+@media all and (max-width: 740px) {
+    .help__random-summa-block {
+        width: 210px;
+        margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 340px) {
+    .help__random-summa-block {
+        width: 200px;
+    }
+}
+.help__random-summa-block:hover {
+    border: 2px solid #fc691b;
+}
+.help__summa-input:checked + .help__random-summa-block {
+    border: 2px solid #fc691b;
+}
+.help__summa-input:checked + .help__random-summa-block>.help__random-summa-input {
+    border-bottom: 2px solid white;
+}

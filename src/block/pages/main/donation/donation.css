@@ -1,0 +1,32 @@
+@import url("./__content/donation__content.css");
+.donation {
+    width: 100%;
+    background: #B0EDD8;
+    padding-bottom: 116px;
+    padding-right: 136px;
+    padding-left: 136px;
+    padding-top: 58px;
+}
+@media all and (max-width: 768px) {
+    .donation {
+        padding-bottom: 56px;
+        padding-top: 48px;
+    }
+}
+@media all and (max-width: 470px) {
+    .donation {
+        padding-top: 40px;  
+    }
+}
+@media all and (max-width: 360px) {
+    .donation {
+        padding-bottom: 30px;
+    }
+}
+@media all and (max-width: 360px) {
+    .donation {
+        padding-top: 40px;
+    }
+}
+
+

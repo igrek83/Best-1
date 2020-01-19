@@ -1,0 +1,7 @@
+.help__button_theme__once {
+    background: #FFFFFF;
+    color: #9397cb;
+}
+.help__button_theme__once:focus {
+    color: #5A3F98;
+}

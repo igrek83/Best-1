@@ -1,0 +1,9 @@
+.header__social-icon_name_vk {
+    background-image: url("../../../../../../images/vk-fiolet.svg");
+}
+.header__social-icon_name_vk:hover {
+    background-image: url("../../../../../../images/vk-orange.svg");
+}
+.header__social-icon_name_vk:active {
+    background-image: url("../../../../../../images/vk-orange.svg");
+}

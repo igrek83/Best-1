@@ -1,0 +1,9 @@
+.gratitude__social-icon_name_vk {
+    background-image: url("../../../../../../images/vk-fiolet.svg");
+}
+.gratitude__social-icon_name_vk:hover {
+    background-image: url("../../../../../../images/vk-orange.svg");
+}
+.gratitude__social-icon_name_vk:active {
+    background-image: url("../../../../../../images/vk-orange.svg");
+}

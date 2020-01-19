@@ -1,0 +1,14 @@
+.coach__title {
+    font-family: "HelveticaNeueCyr-Bold";
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #5A3F98;
+    margin-bottom: 33px;
+}
+@media all and (max-width: 360px) {
+    .coach__title {
+        text-align: center;
+    }
+}

@@ -1,0 +1,28 @@
+@import url("./__block-container/donation__block-container.css");
+.donation__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media all and (max-width: 1390px) {
+    .donation__block {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 768px) {
+    .donation__block {
+        width: 548px;
+    }
+}
+@media all and (max-width: 360px) {
+    .donation__block {
+        width: 328px;
+    }
+}
+@media all and (max-width: 340px) {
+    .donation__block {
+        width: 310px;
+    }
+}

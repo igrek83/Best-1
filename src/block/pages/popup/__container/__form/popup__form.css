@@ -1,0 +1,23 @@
+@import url("./__form-choice/popup__form-choice.css");
+@import url("./__form-summa/popup__form-summa.css");
+@import url("./__form-about/popup__form-about.css");
+@import url("./__container-button/popup__container-button.css");
+@import url("./__checkbox-block/popup__checkbox-block.css");
+@import url("./__description/popup__description.css");
+.popup__form {
+    width: 706px;
+    display: flex;
+    flex-direction: column;
+}
+@media all and (max-width: 740px) {
+    .popup__form {
+        width: 328px;
+        align-items: center;
+    }
+}
+@media all and (max-width: 320px) {
+    .popup__form {
+        width: 310px;
+        align-items: center;
+    }
+}

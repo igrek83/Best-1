@@ -1,0 +1,11 @@
+.help__checkbox-style {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333235;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.help__checkbox:checked + .help__checkbox-style {
+    background-image: url("../../../../../../../images/checkboxstyle.svg");
+    background-size: cover;
+}

@@ -1,0 +1,12 @@
+@import url("./__about-block/popup__about-block.css");
+.popup__form-about {
+    width: 706px;
+    display: flex;
+    justify-content: space-between;
+}
+@media all and (max-width: 740px){
+    .popup__form-about {
+        width: 282px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,9 @@
+@import url("../vendor/normalize.css");
+@import url("./pages/pages.css");
+@import url("../vendor/fonts.css");
+body {
+    background: #9c9898;
+}
+* {
+	box-sizing: border-box;
+}

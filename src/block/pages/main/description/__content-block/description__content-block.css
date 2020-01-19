@@ -1,0 +1,10 @@
+@import url("./__header/description__header.css");
+@import url("./__content/description__content.css");
+@import url("./__slider/description__slider.css");
+.description__content-block {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1240px;
+}

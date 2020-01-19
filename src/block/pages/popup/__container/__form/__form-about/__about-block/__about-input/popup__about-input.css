@@ -1,0 +1,78 @@
+.popup__about-input {
+    outline: none;
+    max-width: 346px;
+    height: 46px;
+    border: 2px solid #9397cb;
+    margin-top: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 18px;
+    line-height: 24px;
+    color: #333235;
+}
+.popup__about-input:focus {
+    border: 2px solid #ED180B;
+}
+@media all and (max-width: 740px) {
+    .popup__about-input {
+        width: 288px;
+    }
+}
+[name="names"]::-webkit-input-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+} 
+[name="names"]::-moz-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+}
+[name="names"]:-moz-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+}
+[name="names"]:-ms-input-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+}
+
+[name="emails"]::-webkit-input-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+} 
+[name="emails"]::-moz-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+}
+[name="emails"]:-moz-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+}
+[name="emails"]:-ms-input-placeholder {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: 0.25px;
+}

@@ -1,0 +1,17 @@
+@import url("./__about-description/popup__about-description.css");
+@import url("./__about-input/popup__about-input.css");
+@Import url("./__about-error/popup__about-error.css");
+@import url("./__about-error/popup__about-error_is_opened.css");
+.popup__about-block {
+    max-width: 346px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+    flex: 1;
+}
+@media all and (max-width: 740px) {
+    .popup__about-block {
+        max-width: 282px;
+        align-items: center;
+    }
+}

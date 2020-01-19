@@ -1,0 +1,10 @@
+.donation__block-border {
+    width: 460px;
+    margin-top: 7px;
+    border: 0.8px dashed #9397CB;
+}
+@media all and (max-width: 768px) {
+    .donation__block-border {
+        width: 296px;
+    }
+}

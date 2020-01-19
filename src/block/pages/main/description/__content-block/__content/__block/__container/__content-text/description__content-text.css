@@ -1,0 +1,7 @@
+@import url("./__phrase/description__phrase.css");
+@import url("./__phrase/description__phrase_theme_bottom.css");
+.description__content-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

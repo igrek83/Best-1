@@ -1,0 +1,14 @@
+@import url("./__choice-input/help__choice-input.css");
+@import url("./__choice-input-style/help__choice-input-style.css");
+@import url("./__choice-input-style/help__choice-input-style_theme_left.css");
+@import url("./__choice-input-style/help__choice-input-style_theme_right.css");
+@import url("./__choice-block/help__choice-block.css");
+.help__form-choice {
+    display: flex;
+    margin-bottom: 40px;
+}
+@media all and (max-width: 740px) {
+    .help__form-choice {
+    margin-bottom: 30px;
+    }
+}

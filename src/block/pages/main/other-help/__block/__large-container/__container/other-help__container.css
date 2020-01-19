@@ -1,0 +1,17 @@
+@import url("./__image/other-help__image.css");
+@import url("./__title/other-help__title.css");
+.other-help__container {
+    width: 276px;
+    display: flex;
+    justify-content: space-between;
+}
+@media all and (max-width: 768px) {
+    .other-help__container {
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 540px) {
+    .other-help__container {
+        margin-bottom: 20px;
+    }
+}
