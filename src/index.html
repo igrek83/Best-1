@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Лучшие друзья</title>
+    <meta name="desciption" content="«Лучшие друзья» помогают людям с нарушениями развития познакомиться и подружиться со сверстниками без инвалидности, найти работу и жить самостоятельно.">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="shortcut icon" href="<%=require(`./images/favicon.ico`).default%>"  type="image/x-icon">
+    <title>Лучшие друзья</title>
     <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
 </head>
 <body>
@@ -52,15 +54,15 @@
                     <div class="popup__form-summa">
                         <input type="radio" name="summas" id="popupHundred" value="100" class="popup__summa-input">
                         <label for="popupHundred" class="popup__summa-input-style popup__summa-input-style_theme_right">100 ₽</label>
-                        <input type="radio" name="summas" id="popupThreeHundred"  value="300" class="popup__summa-input">
+                        <input type="radio" name="summas" id="popupThreeHundred"  value="300" class="popup__summa-input" checked>
                         <label for="popupThreeHundred" class="popup__summa-input-style popup__summa-input-style_theme_right">300 ₽</label>
                         <input type="radio" name="summas" id="popupFiveHundred" value="500" class="popup__summa-input">
                         <label for="popupFiveHundred" class="popup__summa-input-style" tabindex="5">500 ₽</label>
                         <input type="radio" name="summas" id="popupChiliad" value="1000" class="popup__summa-input">
                         <label for="popupChiliad" class="popup__summa-input-style popup__summa-input-style_theme_right">1000 ₽</label>
-                        <input type="radio" name="summas" id="popup-random-summa" class="popup__summa-input" checked>
+                        <input type="radio" name="summas" id="popupRandom" class="popup__summa-input">
                         <label for="popup-random-summa" class="popup__random-summa-block"></label>
-                        <input type="number" name="popupRandomSumma" class="popup__random-summa-input" step="10" placeholder="Ваша сумма" min="10" id="popupRandomSumma" value="50">
+                        <input type="number" name="popupRandomSumma" class="popup__random-summa-input" step="10" placeholder="Ваша сумма" min="0" id="popupRandomSumma" value="">
                         <p class="popup__symbol-rubl">₽</p>
                     </div>
                     <div class="popup__form-about">
@@ -107,7 +109,6 @@
                 </div>
             </div>
         </section>
-   
         <main class="main">
             <section class="description" id="beginner">
                 <div class="header__content-block">
@@ -263,15 +264,15 @@
                     <div class="help__form-summa">
                         <input type="radio" name="summa" id="hundred" class="help__summa-input" value="100">
                         <label for="hundred" class="help__summa-input-style help__summa-input-style_theme_right">100 ₽</label>
-                        <input type="radio" name="summa" id="threeHundred" class="help__summa-input" value="300">
+                        <input type="radio" name="summa" id="threeHundred" class="help__summa-input" value="300" checked>
                         <label for="threeHundred" class="help__summa-input-style help__summa-input-style_theme_right">300 ₽</label>
                         <input type="radio" name="summa" id="fiveHundred" class="help__summa-input" value="500">
                         <label for="fiveHundred" class="help__summa-input-style">500 ₽</label>
                         <input type="radio" name="summa" id="chiliad" class="help__summa-input" value="1000">
                         <label for="chiliad" class="help__summa-input-style help__summa-input-style_theme_right">1000 ₽</label>
-                        <input type="radio" name="summa" id="help-random-summa" class="help__summa-input" checked>
+                        <input type="radio" name="summa" id="helpRandom" class="help__summa-input">
                         <label for="help-random-summa" class="help__random-summa-block"></label>
-                        <input type="number" name="helpRandomSumma" class="help__random-summa-input" placeholder="Ваша сумма" min="10" step="10" id="helpRandomSumma" value="50">
+                        <input type="number" name="helpRandomSumma" class="help__random-summa-input" placeholder="Ваша сумма" min="10" step="10" id="helpRandomSumma" value="">
                         <span class="help__symbol-rubl">₽</span>
                     </div>
                     <div class="help__form-about">

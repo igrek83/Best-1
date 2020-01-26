@@ -13,17 +13,14 @@ export class Popup {
     }
     open(event) {
       document.querySelector('.header').classList.add("header_is_opened");  
-      if(event.target.classList.contains("header__button")) {
-        document.querySelector(".popup").classList.add("popup_is_opened");
-      }
-      if(event.target.classList.contains("footer__button")) {
+      if(event.target.classList.contains("header__button") || event.target.classList.contains("footer__button")) {
         document.querySelector(".popup").classList.add("popup_is_opened");
       }
     }
     close() {
       document.querySelector(".popup").classList.remove("popup_is_opened");
       document.querySelector('.header').classList.remove("header_is_opened");
-      popupForm.reset(); 
+      popupForm.reset();
       popupInputValidate.resetError();
       popupEmailValidate.resetError();
       helpInputValidate.resetError();

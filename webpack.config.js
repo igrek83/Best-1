@@ -25,7 +25,7 @@ module.exports = {
             use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader']
         },
         {
-            test: /\.(gif|png|jpe?g|svg)$/i,
+            test: /\.(gif|png|jpe?g|ico|svg)$/i,
             use: [
                 "file-loader?name=./images/[name].[hash].[ext]", 
                 {
@@ -33,6 +33,23 @@ module.exports = {
                     options: {
                         bypassOnDebug: true,
                         disable: true,
+                        mozjpeg: {
+                            progressive: true,
+                            quality: 85,
+                          },
+                          optipng: {
+                            enabled: false,
+                          },
+                          pngquant: {
+                            quality: [0.65, 0.9],
+                            speed: 4,
+                          },
+                          gifsicle: {
+                            interlaced: false,
+                          },
+                          webp: {
+                            quality: 75,
+                          },
                     },
                 },
             ],
@@ -47,7 +64,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             template: './src/index.html',
-            filename: 'index.html'
+            filename: 'index.html',
         }),
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'

@@ -6,7 +6,6 @@
       }
       arrow(event) {
         const sliderArray = document.querySelectorAll(`[name="slider"]`);
-        const arrowRight = document.querySelector(".description__arrow_theme_right");
         if(event.target.classList.contains("description__arrow_theme_left")) {
             for (let i = 0; i < sliderArray.length; i++) {
                 if (sliderArray[i].checked) {
