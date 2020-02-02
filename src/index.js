@@ -56,8 +56,8 @@ function helpCheckeds() {
 }
 function popupOnceHelp(event) {
   event.preventDefault();
-  let email = popupForm.elements.emails;
   let amount = popupAmount();
+  let email = popupForm.elements.emails;
   let amountNumber = Number.parseInt(amount);
   popupForm.reset();
   oncePay(email.value, amountNumber);
